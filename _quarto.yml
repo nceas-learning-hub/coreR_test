@@ -1,0 +1,64 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "coreR Test Course"
+  subtitle: "2024-01-01 - 2024-12-31"
+  reader-mode: false
+
+  # NoteHD: cover image is not working
+  # cover-image: cover.png
+  # cover-image-alt: "Learning Hub logo in the shape of a hexagon with a bee in the center"
+
+  favicon: cover.png # learning hub logo
+
+  sidebar:
+    title: "Training Materials"
+    style: "floating"
+    search: true
+    tools:
+      - icon: house-door-fill
+        href: https://www.nceas.ucsb.edu/learning-hub
+      - icon: twitter
+        href: https://twitter.com/ucsb_nceas
+      - icon: github
+        href: https://github.com/nceas-learning-hub/coreR_test
+
+  chapters:
+    - index.qmd # preface
+    - part: "Day 1"
+      chapters:
+      - s01_r_programming_introduction.qmd  ###  (coreRlessons v0.1.0)
+      - s02_r_quarto_literate_analysis.qmd  ###  (coreRlessons v0.1.0)
+      - s03_activity_reproducibility_lego.qmd  ###  (coreRlessons v0.1.0)
+    - part: "Day 2"
+      chapters:
+      - s04_github_introduction.qmd  ###  (coreRlessons v0.1.0)
+      - s05_lecture_tidy_data.qmd  ###  (coreRlessons v0.1.0)
+      - s06_r_tidyverse_clean_wrangle.qmd  ###  (coreRlessons v0.1.0)
+      - s07_r_practice_tidy_data_joins.qmd  ###  (coreRlessons v0.1.0)
+    - part: "Day 3"
+      chapters:
+      - s08_github_collaboration.qmd  ###  (coreRlessons v0.1.0)
+    - part: "Day 4"
+      chapters:
+      - s09_r_functions.qmd  ###  (coreRlessons v0.1.0)
+      - s10_r_packages.qmd  ###  (coreRlessons v0.1.0)
+
+
+
+bibliography: book.bib
+
+format:
+  html:
+    theme: cosmo
+    css: style.css
+    title-block-banner: "#0b5f4acc" ### doesn't exactly match header color in style.css...?
+    title-block-banner-color: "white"
+    ### add css to tighten the margins? add an NCEAS or LH logo in the header?
+  # Note HD: latex rendering issues, maybe with column-margin
+  # pdf:
+  #   documentclass: scrreprt
+
+editor: source
