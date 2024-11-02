@@ -1,12 +1,21 @@
 /* NCEAS Learning Hub site uses Avenir... some free options on Google Fonts:
    Sen, Figtree, Manrope, Montserrat
 */
+
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+.quarto-title-block .title, .subtitle  {
+  /* in elements with quarto-title-block class, change color for classes title and subtitle */
+  color: white;
+}
 
 .quarto-title-block .quarto-title-banner {
   /* multiple background images - first (NCEAS logo) on top, then hex, then
      linear gradient underneath */
-  background-image: url(logo-nceas.svg), url(cover.png), linear-gradient(to top right, #5C9341, #167B62, #0C4537, black);
+  background-image: url(logo-nceas.svg),
+                    url(cover.png),
+                    linear-gradient(to top right, #5C9341, #167B62, #0C4537, black);
   /* Then the options apply to each image in turn.  The last (100% 200px) sets
      both the width (100%) and height (200px) of the gradient to fit the block */
   background-size: 100px, 130px, 100% 200px;
