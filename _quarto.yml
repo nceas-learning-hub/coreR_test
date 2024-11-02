@@ -11,7 +11,7 @@ book:
   # cover-image: cover.png
   # cover-image-alt: "Learning Hub logo in the shape of a hexagon with a bee in the center"
 
-  favicon: cover.png # learning hub logo
+  # favicon: cover.png # learning hub logo
 
   sidebar:
     title: "Training Materials"
