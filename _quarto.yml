@@ -46,6 +46,9 @@ book:
       - s09_r_functions.qmd  ###  (coreRlessons v0.1.0)
       - s10_r_packages.qmd  ###  (coreRlessons v0.1.0)
 
+  page-footer:
+    center: "Copyright \u00a9 2024, NCEAS"
+    background: secondary
 
 
 bibliography: book.bib
@@ -54,8 +57,8 @@ format:
   html:
     theme: cosmo
     css: style.css
-    title-block-banner: "stripe.png"
-    # title-block-banner: "#0b5f4acc" ### doesn't exactly match header color in style.css...?
+    # title-block-banner: "stripe.png"
+    title-block-banner: "#0b5f4acc" ### doesn't exactly match header color in style.css...?
     title-block-banner-color: "white"
     ### add css to tighten the margins? add an NCEAS or LH logo in the header?
   # Note HD: latex rendering issues, maybe with column-margin
