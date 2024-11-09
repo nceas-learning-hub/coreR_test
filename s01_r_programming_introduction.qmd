@@ -12,6 +12,12 @@ editor: source
 -   Be introduced to built-in R functions
 -   Use the Help pages to look up function documentation
 
+<!-- [Full Screen](slides/example_slides.html) -->
+
+```{=html}
+<iframe class="slide-deck" src="slides/example_slides.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
+```
+
 ::: Acknowledgements
 This lesson is a combination of excellent lessons by others. Huge thanks to [Julie Lowndes](https://jules32.github.io/) for writing most of this content and letting us build on her material, which in turn was built on [Jenny Bryan's](https://jennybryan.org/about/) materials. We highly recommend reading through the original lessons and using them as reference (see in the resources section below).
 :::
