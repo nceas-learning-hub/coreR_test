@@ -1,3 +1,10 @@
+---
+title: Welcome to coreR!
+format:
+  html:
+    toc: false
+---
+
 <!-- # Preface {.unnumbered} -->
 
 ::: column-margin
@@ -14,6 +21,7 @@ This is a test course to show off the functionality of the coreR and coreRlesson
 <!-- As part of a collaboration between NCEAS and the Delta Science Program, this course has been adapted from [NCEAS coreR course](https://www.nceas.ucsb.edu/learning-hub/core-r), an in-person immersion in R programming for environmental data science. Researchers will gain experience with essential data science tools and best practices to increase their capacity as collaborators, reproducible coders, and open scientists. -->
 
 
+
 ## NCEAS Expertise
 
 The [National Center for Ecological Analysis and Synthesis (NCEAS)](https://www.nceas.ucsb.edu/), a research affiliate of UCSB, is a leading expert on interdisciplinary data science and works collaboratively to answer the world's largest and most complex questions. The NCEAS approach leverages existing data and employs a team science philosophy to squeeze out all potential insights and solutions efficiently - this is called [synthesis science](https://www.nceas.ucsb.edu/our-approach).
@@ -23,17 +31,49 @@ NCEAS has over 25 years of success with this model among working groups and envi
 
 <!-- *June 10 - 13, 2024* -->
 
-### Learning Objectives
+:::{callout-tip title="Learning Objectives"}
 -   Effectively manage data using `tidy` data practices
 -   Implement reproducible scientific workflows throughout all aspects of a project
 -   Establish best practices and utilize tools like Git & GitHub to optimize your collaboration
 -   Better communicate scientific analyses and results using Markdown, GitHub webpages, and R packages like `ggplot2` and `Shiny`
 - Increase your familiarity and confidence with data science tools
+:::
 
 ### Week's Schedule
 
 :::{.column-body-outset}
 ![](images/schedule.png)
+:::
+
+### testing callouts:
+
+NOTE it looks like including `title="title of callout"` in the callout doesn't work... and either does the header method that works for standard callouts... oh well, still pretty cool.  Look at NCEAS Learning Hub style sheet for color ideas.
+
+::: {.callout-exercise}
+Here's the exercise
+
+::: {.callout-hint}
+here's the hint!
+:::
+
+::: {.callout-answer}
+here's the nested answer
+:::
+
+:::
+
+::: {.callout-hint}
+here's the hint, not nested or collapsed
+:::
+
+::: {.callout-answer}
+here's the non-nested answer
+:::
+
+::: {.callout-example collapse=true}
+here's an example
+
+and more text
 :::
 
 

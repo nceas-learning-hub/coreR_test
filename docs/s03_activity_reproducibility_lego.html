@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Reproducibility: a Lego Activity – coreR Test Course</title>
+<title>Reproducibility: a Lego Activity – coreR Test Course: 2024-01-01 - 2024-12-31</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./s04_github_introduction.html" rel="next">
-<link href="./s02_r_quarto_literate_analysis.html" rel="prev">
 <link href="./cover.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -43,11 +41,11 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -77,21 +75,56 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="lh-style.css">
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">coreR Test Course: 2024-01-01 - 2024-12-31</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-instructors" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Instructors</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-instructors">    
+        <li>
+    <a class="dropdown-item" href="https://www.oharascience.com/">
+ <span class="dropdown-text">Casey O’Hara</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item compact">
+    <a class="nav-link active" href="https://github.com/nceas-learning-hub/coreR_test" aria-current="page"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./s01_r_programming_introduction.html">Day 1</a></li><li class="breadcrumb-item"><a href="./s03_activity_reproducibility_lego.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Reproducibility: a Lego Activity</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
+        <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+          <h1 class="quarto-secondary-nav-title">Reproducibility: a Lego Activity</h1>
+        </a>     
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -101,8 +134,8 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./s01_r_programming_introduction.html">Day 1</a></li><li class="breadcrumb-item"><a href="./s03_activity_reproducibility_lego.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Reproducibility: a Lego Activity</span></a></li></ol></nav>
-      <h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Reproducibility: a Lego Activity</span></h1>
+    <div class="quarto-title column-body">
+      <h1 class="title d-none d-lg-block">Reproducibility: a Lego Activity</h1>
                       </div>
   </div>
     
@@ -115,30 +148,25 @@ ul.task-list li input[type="checkbox"] {
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="./">Training Materials</a> 
-        <div class="sidebar-tools-main tools-wide">
-    <a href="https://www.nceas.ucsb.edu/learning-hub" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-house-door-fill"></i></a>
-    <a href="https://twitter.com/ucsb_nceas" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
-    <a href="https://github.com/nceas-learning-hub/coreR_test" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
-</div>
-    </div>
-      </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
         </div>
+        <div class="sidebar-tools-collapse tools-wide">
+    <a href="https://www.nceas.ucsb.edu/learning-hub" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-house-door-fill"></i></a>
+    <a href="https://twitter.com/ucsb_nceas" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
+    <a href="https://github.com/nceas-learning-hub/coreR_test" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+</div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">About the course</span></a>
+ <span class="menu-text">Welcome to coreR!</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -153,19 +181,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./s01_r_programming_introduction.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Working in R &amp; RStudio</span></span></a>
+ <span class="menu-text">Working in R &amp; RStudio</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./s02_r_quarto_literate_analysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Literate Analysis with Quarto</span></span></a>
+ <span class="menu-text">Literate Analysis with Quarto</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./s03_activity_reproducibility_lego.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Reproducibility: a Lego Activity</span></span></a>
+ <span class="menu-text">Reproducibility: a Lego Activity</span></a>
   </div>
 </li>
       </ul>
@@ -182,25 +210,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./s04_github_introduction.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Git and GitHub</span></span></a>
+ <span class="menu-text">Git and GitHub</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./s05_lecture_tidy_data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Tidy Data</span></span></a>
+ <span class="menu-text">Tidy Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./s06_r_tidyverse_clean_wrangle.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Cleaning and Wrangling Data</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./s07_r_practice_tidy_data_joins.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Practice Session: Joins</span></span></a>
+ <span class="menu-text">Cleaning and Wrangling Data</span></a>
   </div>
 </li>
       </ul>
@@ -217,7 +239,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./s08_github_collaboration.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Collaborating with Git and GitHub</span></span></a>
+ <span class="menu-text">Collaborating with Git and GitHub</span></a>
   </div>
 </li>
       </ul>
@@ -234,13 +256,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./s09_r_functions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Writing Functions</span></span></a>
+ <span class="menu-text">Writing Functions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./s10_r_packages.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Creating R Packages</span></span></a>
+ <span class="menu-text">Creating R Packages</span></a>
   </div>
 </li>
       </ul>
@@ -252,15 +274,15 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#reproducibility-activity-using-lego" id="toc-reproducibility-activity-using-lego" class="nav-link active" data-scroll-target="#reproducibility-activity-using-lego"><span class="header-section-number">3.1</span> Reproducibility activity using LEGO®</a>
+  <li><a href="#reproducibility-activity-using-lego" id="toc-reproducibility-activity-using-lego" class="nav-link active" data-scroll-target="#reproducibility-activity-using-lego"><span class="header-section-number">1</span> Reproducibility activity using LEGO®</a>
   <ul class="collapse">
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
   </ul></li>
-  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started"><span class="header-section-number">3.2</span> Getting started</a></li>
-  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion"><span class="header-section-number">3.3</span> Discussion</a></li>
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started"><span class="header-section-number">2</span> Getting started</a></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion"><span class="header-section-number">3</span> Discussion</a></li>
   </ul>
 </nav>
     </div>
@@ -271,8 +293,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="reproducibility-activity-using-lego" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="reproducibility-activity-using-lego"><span class="header-section-number">3.1</span> Reproducibility activity using LEGO®</h2>
+<section id="reproducibility-activity-using-lego" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="reproducibility-activity-using-lego"><span class="header-section-number">1</span> Reproducibility activity using LEGO®</h2>
 <section id="learning-objectives" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="learning-objectives">Learning Objectives</h3>
 <ul>
@@ -294,8 +316,8 @@ Acknowledgements
 </div>
 </section>
 </section>
-<section id="getting-started" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="getting-started"><span class="header-section-number">3.2</span> Getting started</h2>
+<section id="getting-started" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="getting-started"><span class="header-section-number">2</span> Getting started</h2>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -315,8 +337,8 @@ Setup
 </div>
 <p>At the end, we will discuss as a group.</p>
 </section>
-<section id="discussion" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="discussion"><span class="header-section-number">3.3</span> Discussion</h2>
+<section id="discussion" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="discussion"><span class="header-section-number">3</span> Discussion</h2>
 <details>
 <summary>
 Discussion Questions
@@ -753,18 +775,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="./s02_r_quarto_literate_analysis.html" class="pagination-link" aria-label="Literate Analysis with Quarto">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Literate Analysis with Quarto</span></span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./s04_github_introduction.html" class="pagination-link" aria-label="Git and GitHub">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Git and GitHub</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

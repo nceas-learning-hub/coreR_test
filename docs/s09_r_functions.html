@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>9&nbsp; Writing Functions – coreR Test Course</title>
+<title>Writing Functions – coreR Test Course: 2024-01-01 - 2024-12-31</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,8 +64,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./s10_r_packages.html" rel="next">
-<link href="./s08_github_collaboration.html" rel="prev">
 <link href="./cover.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -77,11 +75,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -131,21 +129,56 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="lh-style.css">
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">coreR Test Course: 2024-01-01 - 2024-12-31</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-instructors" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Instructors</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-instructors">    
+        <li>
+    <a class="dropdown-item" href="https://www.oharascience.com/">
+ <span class="dropdown-text">Casey O’Hara</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item compact">
+    <a class="nav-link active" href="https://github.com/nceas-learning-hub/coreR_test" aria-current="page"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./s09_r_functions.html">Day 4</a></li><li class="breadcrumb-item"><a href="./s09_r_functions.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Writing Functions</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
+        <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+          <h1 class="quarto-secondary-nav-title">Writing Functions</h1>
+        </a>     
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -155,8 +188,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./s09_r_functions.html">Day 4</a></li><li class="breadcrumb-item"><a href="./s09_r_functions.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Writing Functions</span></a></li></ol></nav>
-      <h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Writing Functions</span></h1>
+    <div class="quarto-title column-body">
+      <h1 class="title d-none d-lg-block">Writing Functions</h1>
                       </div>
   </div>
     
@@ -169,30 +202,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="./">Training Materials</a> 
-        <div class="sidebar-tools-main tools-wide">
-    <a href="https://www.nceas.ucsb.edu/learning-hub" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-house-door-fill"></i></a>
-    <a href="https://twitter.com/ucsb_nceas" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
-    <a href="https://github.com/nceas-learning-hub/coreR_test" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
-</div>
-    </div>
-      </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
         </div>
+        <div class="sidebar-tools-collapse tools-wide">
+    <a href="https://www.nceas.ucsb.edu/learning-hub" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-house-door-fill"></i></a>
+    <a href="https://twitter.com/ucsb_nceas" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
+    <a href="https://github.com/nceas-learning-hub/coreR_test" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+</div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">About the course</span></a>
+ <span class="menu-text">Welcome to coreR!</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -207,19 +235,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./s01_r_programming_introduction.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Working in R &amp; RStudio</span></span></a>
+ <span class="menu-text">Working in R &amp; RStudio</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./s02_r_quarto_literate_analysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Literate Analysis with Quarto</span></span></a>
+ <span class="menu-text">Literate Analysis with Quarto</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./s03_activity_reproducibility_lego.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Reproducibility: a Lego Activity</span></span></a>
+ <span class="menu-text">Reproducibility: a Lego Activity</span></a>
   </div>
 </li>
       </ul>
@@ -236,25 +264,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./s04_github_introduction.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Git and GitHub</span></span></a>
+ <span class="menu-text">Git and GitHub</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./s05_lecture_tidy_data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Tidy Data</span></span></a>
+ <span class="menu-text">Tidy Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./s06_r_tidyverse_clean_wrangle.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Cleaning and Wrangling Data</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./s07_r_practice_tidy_data_joins.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Practice Session: Joins</span></span></a>
+ <span class="menu-text">Cleaning and Wrangling Data</span></a>
   </div>
 </li>
       </ul>
@@ -271,7 +293,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./s08_github_collaboration.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Collaborating with Git and GitHub</span></span></a>
+ <span class="menu-text">Collaborating with Git and GitHub</span></a>
   </div>
 </li>
       </ul>
@@ -288,13 +310,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./s09_r_functions.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Writing Functions</span></span></a>
+ <span class="menu-text">Writing Functions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./s10_r_packages.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Creating R Packages</span></span></a>
+ <span class="menu-text">Creating R Packages</span></a>
   </div>
 </li>
       </ul>
@@ -306,17 +328,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">On this page</h2>
    
   <ul>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
-  <li><a href="#r-functions" id="toc-r-functions" class="nav-link" data-scroll-target="#r-functions"><span class="header-section-number">9.1</span> R Functions</a>
+  <li><a href="#r-functions" id="toc-r-functions" class="nav-link" data-scroll-target="#r-functions"><span class="header-section-number">1</span> R Functions</a>
   <ul class="collapse">
-  <li><a href="#why-functions" id="toc-why-functions" class="nav-link" data-scroll-target="#why-functions"><span class="header-section-number">9.1.1</span> Why Functions?</a></li>
-  <li><a href="#exercise-temperature-conversion" id="toc-exercise-temperature-conversion" class="nav-link" data-scroll-target="#exercise-temperature-conversion"><span class="header-section-number">9.1.2</span> Exercise: Temperature Conversion</a></li>
-  <li><a href="#documenting-r-functions" id="toc-documenting-r-functions" class="nav-link" data-scroll-target="#documenting-r-functions"><span class="header-section-number">9.1.3</span> Documenting R Functions</a></li>
-  <li><a href="#exercise-minimizing-work-with-functions" id="toc-exercise-minimizing-work-with-functions" class="nav-link" data-scroll-target="#exercise-minimizing-work-with-functions"><span class="header-section-number">9.1.4</span> Exercise: Minimizing Work with Functions</a></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">9.1.5</span> Summary</a></li>
+  <li><a href="#why-functions" id="toc-why-functions" class="nav-link" data-scroll-target="#why-functions"><span class="header-section-number">1.1</span> Why Functions?</a></li>
+  <li><a href="#exercise-temperature-conversion" id="toc-exercise-temperature-conversion" class="nav-link" data-scroll-target="#exercise-temperature-conversion"><span class="header-section-number">1.2</span> Exercise: Temperature Conversion</a></li>
+  <li><a href="#documenting-r-functions" id="toc-documenting-r-functions" class="nav-link" data-scroll-target="#documenting-r-functions"><span class="header-section-number">1.3</span> Documenting R Functions</a></li>
+  <li><a href="#exercise-minimizing-work-with-functions" id="toc-exercise-minimizing-work-with-functions" class="nav-link" data-scroll-target="#exercise-minimizing-work-with-functions"><span class="header-section-number">1.4</span> Exercise: Minimizing Work with Functions</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">1.5</span> Summary</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -336,8 +358,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Document functions to improve understanding and code communication</li>
 </ul>
 </section>
-<section id="r-functions" class="level2" data-number="9.1">
-<h2 data-number="9.1" class="anchored" data-anchor-id="r-functions"><span class="header-section-number">9.1</span> R Functions</h2>
+<section id="r-functions" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="r-functions"><span class="header-section-number">1</span> R Functions</h2>
 <div class="callout callout-style-default callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -357,8 +379,8 @@ Quick reminder: What is a function?
 </div>
 </div>
 <p>Many people write R code as a single, continuous stream of commands, often drawn from the R Console itself and simply pasted into a script. While any script brings benefits over non-scripted solutions, there are advantages to breaking code into small, reusable modules. This is the role of a <strong>function</strong> in R. In this lesson, we will review the advantages of coding with functions, practice by creating some functions and show how to call them, and then do some exercises to build other simple functions.</p>
-<section id="why-functions" class="level3" data-number="9.1.1">
-<h3 data-number="9.1.1" class="anchored" data-anchor-id="why-functions"><span class="header-section-number">9.1.1</span> Why Functions?</h3>
+<section id="why-functions" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="why-functions"><span class="header-section-number">1.1</span> Why Functions?</h3>
 <div class="callout callout-style-simple callout-important">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -399,8 +421,8 @@ Naming Functions
 </div>
 </div>
 </section>
-<section id="exercise-temperature-conversion" class="level3" data-number="9.1.2">
-<h3 data-number="9.1.2" class="anchored" data-anchor-id="exercise-temperature-conversion"><span class="header-section-number">9.1.2</span> Exercise: Temperature Conversion</h3>
+<section id="exercise-temperature-conversion" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="exercise-temperature-conversion"><span class="header-section-number">1.2</span> Exercise: Temperature Conversion</h3>
 <p>Imagine you have a bunch of data measured in Fahrenheit and you want to convert that for analytical purposes to Celsius. You might have an R script that does this for you.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>airtemps <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">212</span>, <span class="fl">30.3</span>, <span class="dv">78</span>, <span class="dv">32</span>)</span>
@@ -489,8 +511,8 @@ Solution, but don’t peek!
 </div>
 </section>
 </section>
-<section id="documenting-r-functions" class="level3" data-number="9.1.3">
-<h3 data-number="9.1.3" class="anchored" data-anchor-id="documenting-r-functions"><span class="header-section-number">9.1.3</span> Documenting R Functions</h3>
+<section id="documenting-r-functions" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="documenting-r-functions"><span class="header-section-number">1.3</span> Documenting R Functions</h3>
 <p>Functions need documentation so that we can communicate what they do, and why. The <a href="https://roxygen2.r-lib.org/"><code>roxygen2</code> R package</a> provides a simple means to document your functions so that you can explain what the function does, the assumptions about the input values, a description of the value that is returned, and the rationale for decisions made about implementation.</p>
 <p>Documentation in <code>roxygen2</code> is placed immediately before the function definition, and is indicated by a special comment line that always starts with the characters <code>#'</code>. Here’s a documented version of a function:</p>
 <div class="cell">
@@ -525,8 +547,8 @@ Check it out: Function Documentation Section from R Packages (2e)
 </div>
 </div>
 </section>
-<section id="exercise-minimizing-work-with-functions" class="level3" data-number="9.1.4">
-<h3 data-number="9.1.4" class="anchored" data-anchor-id="exercise-minimizing-work-with-functions"><span class="header-section-number">9.1.4</span> Exercise: Minimizing Work with Functions</h3>
+<section id="exercise-minimizing-work-with-functions" class="level3" data-number="1.4">
+<h3 data-number="1.4" class="anchored" data-anchor-id="exercise-minimizing-work-with-functions"><span class="header-section-number">1.4</span> Exercise: Minimizing Work with Functions</h3>
 <p>Functions can of course be as simple or complex as needed. They can be be very effective in repeatedly performing calculations, or for bundling a group of commands that are used on many different input data sources. For example, we might create a simple function that takes Fahrenheit temperatures as input, and calculates both Celsius and Kelvin temperatures. All three values are then returned in a list, making it very easy to create a comparison table among the three scales.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>convert_temps <span class="ot">&lt;-</span> <span class="cf">function</span>(fahr) {</span>
@@ -539,8 +561,8 @@ Check it out: Function Documentation Section from R Packages (2e)
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-6f8eb1861e1a5d1fcbdb" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-6f8eb1861e1a5d1fcbdb">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21"],[-100,-90,-80,-70,-60,-50,-40,-30,-20,-10,0,10,20,30,40,50,60,70,80,90,100],[-73.33333333333333,-67.77777777777777,-62.22222222222222,-56.66666666666666,-51.11111111111111,-45.55555555555556,-40,-34.44444444444444,-28.88888888888889,-23.33333333333333,-17.77777777777778,-12.22222222222222,-6.666666666666667,-1.111111111111111,4.444444444444445,10,15.55555555555556,21.11111111111111,26.66666666666667,32.22222222222222,37.77777777777778],[199.8166666666667,205.3722222222222,210.9277777777777,216.4833333333333,222.0388888888889,227.5944444444444,233.15,238.7055555555555,244.2611111111111,249.8166666666666,255.3722222222222,260.9277777777777,266.4833333333333,272.0388888888889,277.5944444444444,283.15,288.7055555555555,294.2611111111111,299.8166666666667,305.3722222222222,310.9277777777777]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>fahr<\/th>\n      <th>celsius<\/th>\n      <th>kelvin<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"fahr","targets":1},{"name":"celsius","targets":2},{"name":"kelvin","targets":3}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-02f5ed418d3b3a517668" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-02f5ed418d3b3a517668">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21"],[-100,-90,-80,-70,-60,-50,-40,-30,-20,-10,0,10,20,30,40,50,60,70,80,90,100],[-73.33333333333333,-67.77777777777777,-62.22222222222222,-56.66666666666666,-51.11111111111111,-45.55555555555556,-40,-34.44444444444444,-28.88888888888889,-23.33333333333333,-17.77777777777778,-12.22222222222222,-6.666666666666667,-1.111111111111111,4.444444444444445,10,15.55555555555556,21.11111111111111,26.66666666666667,32.22222222222222,37.77777777777778],[199.8166666666667,205.3722222222222,210.9277777777777,216.4833333333333,222.0388888888889,227.5944444444444,233.15,238.7055555555555,244.2611111111111,249.8166666666666,255.3722222222222,260.9277777777777,266.4833333333333,272.0388888888889,277.5944444444444,283.15,288.7055555555555,294.2611111111111,299.8166666666667,305.3722222222222,310.9277777777777]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>fahr<\/th>\n      <th>celsius<\/th>\n      <th>kelvin<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"fahr","targets":1},{"name":"celsius","targets":2},{"name":"kelvin","targets":3}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p>Once we have a dataset like that, we might want to plot it. One thing that we do repeatedly is set a consistent set of display elements for creating graphs and plots. By using a function to create a custom <code>ggplot</code> theme, we can enable to keep key parts of the formatting flexible. For example, in the <code>custom_theme</code> function, we provide a <code>base_size</code> argument that defaults to using a font size of 9 points. Because it has a default set, it can safely be omitted. But if it is provided, then that value is used to set the base font size for the plot.</p>
@@ -649,8 +671,8 @@ font family not found in Windows font database</code></pre>
 </div>
 <p>Once these functions are set up, all of the plots built with them can be reformatted by changing the settings in just the functions, whether they were used to create 1, 10, or 100 plots.</p>
 </section>
-<section id="summary" class="level3" data-number="9.1.5">
-<h3 data-number="9.1.5" class="anchored" data-anchor-id="summary"><span class="header-section-number">9.1.5</span> Summary</h3>
+<section id="summary" class="level3" data-number="1.5">
+<h3 data-number="1.5" class="anchored" data-anchor-id="summary"><span class="header-section-number">1.5</span> Summary</h3>
 <ul>
 <li>Functions are useful to reduce redundancy, reuse code, and reduce errors</li>
 <li>Build functions with <code>function()</code></li>
@@ -1100,18 +1122,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="./s08_github_collaboration.html" class="pagination-link" aria-label="Collaborating with Git and GitHub">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Collaborating with Git and GitHub</span></span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./s10_r_packages.html" class="pagination-link" aria-label="Creating R Packages">
-        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Creating R Packages</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
