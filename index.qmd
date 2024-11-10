@@ -47,7 +47,7 @@ NCEAS has over 25 years of success with this model among working groups and envi
 
 ### testing callouts:
 
-NOTE it looks like including `title="title of callout"` in the callout doesn't work... oh well, still pretty cool.  Look at NCEAS Learning Hub style sheet for color ideas.
+NOTE it looks like including `title="title of callout"` in the callout doesn't work... and either does the header method that works for standard callouts... oh well, still pretty cool.  Look at NCEAS Learning Hub style sheet for color ideas.
 
 ::: {.callout-exercise}
 Here's the exercise

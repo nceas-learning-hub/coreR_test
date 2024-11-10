@@ -4,11 +4,12 @@ project:
 
 website:
   title: "coreR Test Course: 2024-01-01 - 2024-12-31"
+  ### NEW subtitle removed - doesn't work for website
   reader-mode: false
   repo-url: https://github.com/nceas-learning-hub/coreR_test
   favicon: cover.png # learning hub logo
-  bread-crumbs: false
-  navbar:
+  bread-crumbs: false ### NEW keep header clean
+  navbar: ### NEW inspired by Nick's site
     right:
       - text: "Instructors"
         menu:
@@ -29,25 +30,25 @@ website:
       - icon: github
         href: https://github.com/nceas-learning-hub/coreR_test
     contents:
-      - index.qmd # preface
+      - index.qmd
       - section: "Day 1"
         contents:
         - s01_r_programming_introduction.qmd  ###  (coreRlessons v0.1.0)
         - s02_r_quarto_literate_analysis.qmd  ###  (coreRlessons v0.1.0)
-      #   - s03_activity_reproducibility_lego.qmd  ###  (coreRlessons v0.1.0)
-      # - section: "Day 2"
-      #   contents:
-      #   - s04_github_introduction.qmd  ###  (coreRlessons v0.1.0)
-      #   - s05_lecture_tidy_data.qmd  ###  (coreRlessons v0.1.0)
-      #   - s06_r_tidyverse_clean_wrangle.qmd  ###  (coreRlessons v0.1.0)
-      #   - s07_r_practice_tidy_data_joins.qmd  ###  (coreRlessons v0.1.0)
-      # - section: "Day 3"
-      #   contents:
-      #   - s08_github_collaboration.qmd  ###  (coreRlessons v0.1.0)
-      # - section: "Day 4"
-      #   contents:
-      #   - s09_r_functions.qmd  ###  (coreRlessons v0.1.0)
-      #   - s10_r_packages.qmd  ###  (coreRlessons v0.1.0)
+        - s03_activity_reproducibility_lego.qmd  ###  (coreRlessons v0.1.0)
+      - section: "Day 2"
+        contents:
+        - s04_github_introduction.qmd  ###  (coreRlessons v0.1.0)
+        - s05_lecture_tidy_data.qmd  ###  (coreRlessons v0.1.0)
+        - s06_r_tidyverse_clean_wrangle.qmd  ###  (coreRlessons v0.1.0)
+        # - s07_r_practice_tidy_data_joins.qmd  ###  (coreRlessons v0.1.0)
+      - section: "Day 3"
+        contents:
+        - s08_github_collaboration.qmd  ###  (coreRlessons v0.1.0)
+      - section: "Day 4"
+        contents:
+        - s09_r_functions.qmd  ###  (coreRlessons v0.1.0)
+        - s10_r_packages.qmd  ###  (coreRlessons v0.1.0)
   page-footer:
     center: "Copyright \u00a9 2024, NCEAS"
     background: "#0C4537"
@@ -58,41 +59,13 @@ format:
   html:
     theme: ### can only point to scss, not css
       - cosmo
-      - temp-style.scss ### seems easier than css?
+      - lh-style2.scss ### seems easier than css?
     css: lh-style.css   ### doesn't render NCEAS logo if put in scss file?
     toc: true
     number-sections: true
     title-block-banner: "blue" ### need this here to "turn on" the title-block-banner
-    ### add css to tighten the margins? add an NCEAS or LH logo in the header?
-  # Note HD: latex rendering issues, maybe with column-margin
-  # pdf:
-  #   documentclass: scrreprt
-
-
-# custom-callout:
-#   ### icons don't work in nested callouts (suppress)
-#   ### font-awesome needs to be in _extensions not a deeper folder
-#   ### don't use header method for title (or just keep default title)
-#   callout-exercise:
-#     title: "Exercise"
-#     icon-symbol: "fa-pencil"
-#     color: "#b000b0"
-#   callout-answer: ### no icon, to avoid nesting conflicts?
-#     title: "Answer"
-#     icon: false
-#     color: "#800080"
-#     collapse: true
-#   callout-hint:
-#     title: "Hint"
-#     icon: false
-#     color: "#800080" ### dark purple
-#     collapse: true
-#   callout-example:
-#     title: "Example"
-#     color: "#000080" ### dark green
 
 filters:
 - courseformat
-# - custom-callout
 
 editor: source

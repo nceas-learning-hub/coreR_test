@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Welcome to coreR! – coreR Test Course: 2024-01-01 - 2024-12-31</title>
+<title>Reproducibility: a Lego Activity – coreR Test Course: 2024-01-01 - 2024-12-31</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -78,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="lh-style.css">
 </head>
 
-<body class="nav-sidebar floating nav-fixed slimcontent">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -123,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title">Welcome to coreR!</h1>
+          <h1 class="quarto-secondary-nav-title">Reproducibility: a Lego Activity</h1>
         </a>     
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -135,7 +135,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title d-none d-lg-block">Welcome to coreR!</h1>
+      <h1 class="title d-none d-lg-block">Reproducibility: a Lego Activity</h1>
                       </div>
   </div>
     
@@ -165,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Welcome to coreR!</span></a>
   </div>
 </li>
@@ -192,7 +192,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./s03_activity_reproducibility_lego.html" class="sidebar-item-text sidebar-link">
+  <a href="./s03_activity_reproducibility_lego.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Reproducibility: a Lego Activity</span></a>
   </div>
 </li>
@@ -272,161 +272,84 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#reproducibility-activity-using-lego" id="toc-reproducibility-activity-using-lego" class="nav-link active" data-scroll-target="#reproducibility-activity-using-lego"><span class="header-section-number">1</span> Reproducibility activity using LEGO®</a>
+  <ul class="collapse">
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  </ul></li>
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started"><span class="header-section-number">2</span> Getting started</a></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion"><span class="header-section-number">3</span> Discussion</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
-<!-- # Preface {.unnumbered} -->
-
-<div class="no-row-height column-margin column-container"><div class="">
-<!-- ![](cover.png){width="80%" fig-align="center"} -->
-<!-- ![](images/delta/delta-logo.png){width="80%" fig-align="center"} -->
-</div></div><section id="about-the-course" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="about-the-course">About the course</h2>
-<p>This is a test course to show off the functionality of the coreR and coreRlessons packages <!-- As part of a collaboration between NCEAS and the Delta Science Program, this course has been adapted from [NCEAS coreR course](https://www.nceas.ucsb.edu/learning-hub/core-r), an in-person immersion in R programming for environmental data science. Researchers will gain experience with essential data science tools and best practices to increase their capacity as collaborators, reproducible coders, and open scientists. --></p>
-</section>
-<section id="nceas-expertise" class="level2 page-columns page-full" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="nceas-expertise"><span class="header-section-number">1</span> NCEAS Expertise</h2>
-<p>The <a href="https://www.nceas.ucsb.edu/">National Center for Ecological Analysis and Synthesis (NCEAS)</a>, a research affiliate of UCSB, is a leading expert on interdisciplinary data science and works collaboratively to answer the world’s largest and most complex questions. The NCEAS approach leverages existing data and employs a team science philosophy to squeeze out all potential insights and solutions efficiently - this is called <a href="https://www.nceas.ucsb.edu/our-approach">synthesis science</a>.</p>
-<p>NCEAS has over 25 years of success with this model among working groups and environmental professionals. Together with the Delta Science Program and the Delta Stewardship Council we are excited to pass along skills, workflows, mindsets learn throughout the years.</p>
-<!-- *June 10 - 13, 2024* -->
-<p>:::{callout-tip title=“Learning Objectives”} - Effectively manage data using <code>tidy</code> data practices - Implement reproducible scientific workflows throughout all aspects of a project - Establish best practices and utilize tools like Git &amp; GitHub to optimize your collaboration - Better communicate scientific analyses and results using Markdown, GitHub webpages, and R packages like <code>ggplot2</code> and <code>Shiny</code> - Increase your familiarity and confidence with data science tools :::</p>
-<section id="weeks-schedule" class="level3 page-columns page-full" data-number="1.1">
-<h3 data-number="1.1" class="anchored" data-anchor-id="weeks-schedule"><span class="header-section-number">1.1</span> Week’s Schedule</h3>
-<div class="column-body-outset">
-<p><img src="images/schedule.png" class="img-fluid"></p>
-</div>
-</section>
-<section id="testing-callouts" class="level3" data-number="1.2">
-<h3 data-number="1.2" class="anchored" data-anchor-id="testing-callouts"><span class="header-section-number">1.2</span> testing callouts:</h3>
-<p>NOTE it looks like including <code>title="title of callout"</code> in the callout doesn’t work… and either does the header method that works for standard callouts… oh well, still pretty cool. Look at NCEAS Learning Hub style sheet for color ideas.</p>
-<div class="callout callout-style-default callout-exercise no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
+<section id="reproducibility-activity-using-lego" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="reproducibility-activity-using-lego"><span class="header-section-number">1</span> Reproducibility activity using LEGO®</h2>
+<section id="learning-objectives" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Illustrate elements of good reproducibility through the medium of LEGO®</li>
+<li>Discuss what is needed and what is not needed for good reproducibility</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
+<i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Exercise 1
+Acknowledgements
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
-<div class="callout-exercise">
-<p>Here’s the exercise</p>
-<div class="callout callout-style-default callout-hint no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Hint
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div class="callout-hint">
-<p>here’s the hint!</p>
-</div>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-answer no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Answer
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div class="callout-answer">
-<p>here’s the nested answer</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-hint no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Hint
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div class="callout-hint">
-<p>here’s the hint, not nested or collapsed</p>
-</div>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-answer no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Answer
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div class="callout-answer">
-<p>here’s the non-nested answer</p>
-</div>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-example no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Example
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-<div class="callout-example" data-collapse="true">
-<p>here’s an example</p>
-<p>and more text</p>
-</div>
-</div>
+<p>This activity is largely based on the <a href="http://eprints.gla.ac.uk/196477/">LEGO® Metadata for Reproducibility game pack</a>, which was developed by <a href="https://orcid.org/0000-0002-1936-3499">Mary Donaldson</a> and <a href="https://orcid.org/0000-0001-8950-8422">Matt Mahon</a>.</p>
 </div>
 </div>
 </section>
 </section>
-<section id="code-of-conduct" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="code-of-conduct"><span class="header-section-number">2</span> Code of Conduct</h2>
-<p>By participating in this activity you agree to abide by the <a href="https://www.nceas.ucsb.edu/sites/default/files/2021-11/NCEAS_Code-of-Conduct_Nov2021_0.pdf">NCEAS Code of Conduct</a>.</p>
+<section id="getting-started" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="getting-started"><span class="header-section-number">2</span> Getting started</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Setup
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Gather into small groups</li>
+<li>Get LEGO® blocks and worksheets (instructions + metadata documentation)</li>
+<li>Follow directions on worksheets</li>
+</ol>
+</div>
+</div>
+<p>At the end, we will discuss as a group.</p>
 </section>
-<section id="about-this-book" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="about-this-book"><span class="header-section-number">3</span> About this book</h2>
-<p>These written materials are the result of a continuous and collaborative effort at NCEAS to help researchers make their work more transparent and reproducible. This work began in the early 2000’s, and reflects the expertise and diligence of many, many individuals. The primary authors are listed in the citation below, with additional contributors recognized for their role in developing previous iterations of these or similar materials.</p>
-<p>This work is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
-<p><strong>Citation:</strong> Camila Vargas Poulsen &amp; Angel Chen (2024), NCEAS coreR for Delta Science Program, June 2024, NCEAS Learning Hub. URL <a href="https://learning.nceas.ucsb.edu/2024-06-delta" class="uri">https://learning.nceas.ucsb.edu/2024-06-delta</a>.</p>
-<p><strong>Additional contributors:</strong> Ben Bolker, Amber E. Budden, Julien Brun, Samantha Csik, Halina Do-Linh, Natasha Haycock-Chavez, S. Jeanette Clark, Julie Lowndes, Stephanie Hampton, Matt Jone, Samanta Katz, Erin McLean, Bryce Mecum, Deanna Pennington, Karthik Ram, Jim Regetz, Tracy Teal, Daphne Virlar-Knight, Leah Wasser.</p>
-<p>This is a Quarto book. To learn more about Quarto books visit <a href="https://quarto.org/docs/books" class="uri">https://quarto.org/docs/books</a>.</p>
+<section id="discussion" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="discussion"><span class="header-section-number">3</span> Discussion</h2>
+<details>
+<summary>
+Discussion Questions
+</summary>
+<ul>
+<li>Did you find this a simple way to document your process?</li>
+<li>Was there anything you found difficult to capture?</li>
+<li>Did those replicating the builds find it straightforward to follow?</li>
+<li>Did you encounter any ambiguity in the instructions?</li>
+</ul>
+</details>
 
 
 </section>
