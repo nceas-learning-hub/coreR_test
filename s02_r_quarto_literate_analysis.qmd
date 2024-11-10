@@ -1,7 +1,5 @@
 ---
 title: Literate Analysis with Quarto
-format: html
-editor: source
 ---
 
 ## Learning Objectives {.unnumbered}
@@ -484,7 +482,6 @@ To further clarify the point on environments, perform the following steps:
 ::: callout-important
 ## What about all my R Scripts?
 
-Some pieces of R code are better suited for R scripts than Quarto or RMarkdown. A function you wrote yourself that you use in many different analyses is probably better to define in an R script than repeated across many Quarto or RMarkdown documents. Some analyses have mundane or repetitive tasks that don't need to be explained very much. For example, in the document shown in the beginning of this lesson, 15 different excel files needed to be reformatted in slightly different, mundane ways, like renaming columns and removing header text. Instead of including these tasks in the primary Quarto document, the authors chose to write one R script per file and stored them all in a directory. Then, took the contents of one script and included it in the literate analysis, using it as an example to explain what the scripts did, and then used the `source()` function to run them all from within the Quarto document.
 
 So, just because you know Quarto now, doesn't mean you won't be using R scripts anymore. Both `.R` and `.qmd` have their roles to play in analysis. With practice, it will become more clear what works well in Quarto or RMarkdown, and what belongs in a regular R script.
 :::
